@@ -1,1 +1,71 @@
-<h1>
+                   Primera Actividad
+
+1	<html>	Define el documento HTML.
+2	<head>	Contiene información del documento.
+3	<title>	Define el título de la página.
+4	<body>	Contiene todo el contenido visible.
+5	<h1>	Título principal.
+6	<h2>	Subtítulo de nivel 2.
+7	<h3>	Subtítulo de nivel 3.
+8	<p>	Define un párrafo.
+9	<a>	Crea enlaces.
+10	<img>	Inserta imágenes.
+11	<div>	Agrupa elementos en un bloque.
+12	<span>	Agrupa contenido en línea.
+13	<br>	Inserta un salto de línea.
+14	<hr>	Inserta una línea/separador horizontal.
+15	<strong>	Indica texto con gran importancia, normalmente en negrita.
+16	<em>	Indica énfasis, normalmente en cursiva.
+17	<ul>	Crea una lista sin ordenar.
+18	<ol>	Crea una lista ordenada.
+19	<li>	Define un elemento de lista.
+20	<table>	Crea una tabla.
+21	<tr>	Define una fila de una tabla.
+22	<td>	Define una celda de una tabla.
+23	<form>	Crea un formulario.
+24	<input>	Crea campos de entrada.
+25	<button>	Crea un botón.
+
+
+                   Ejemplos.
+
+1. Contiene toda la paguina HTML
+<html>
+    Contenido de mi página
+</html>
+
+2. Contiene informacion sobre la paguina
+<head>
+    Información de la página
+</head>
+
+3. Define el titulo que aparece en la pestaña del navegador 
+<title>Mi página web</title>
+
+4. Contiene el contenido visible de la paguina
+<body>
+    <h1>Hola mundo</h1>
+</body>
+
+5. crea el titulo principal
+<h1>Mi página web</h1>
+
+6. crea un subtitulo
+<h2>Sobre nosotros</h2>
+
+7. crea un subtitulo mas pequeño
+<h3>Información de contacto</h3>
+
+8. crea un parrafo
+<p>Este es un ejemplo de un párrafo.</p>
+
+9. crea un parrafo
+<a href="https://www.google.com">Ir a Google</a>
+
+10. insertar una imagen
+<img src="foto.jpg" alt="Foto de ejemplo">
+
+
+
+
+
