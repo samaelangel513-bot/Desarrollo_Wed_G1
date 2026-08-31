@@ -1,0 +1,435 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #172033;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: linear-gradient(135deg, #173b70, #2563a8);
+    color: white;
+    padding: 65px 20px;
+}
+
+.presentacion {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.presentacion h1 {
+    font-size: 3.3rem;
+}
+
+.presentacion h2 {
+    color: #bfdbfe;
+    margin-bottom: 10px;
+}
+
+.presentacion p {
+    max-width: 600px;
+}
+
+.avatar {
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    background: white;
+    color: #2563a8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3.5rem;
+    font-weight: bold;
+
+    border: 7px solid #93c5fd;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.boton-principal {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 18px;
+
+    background: white;
+    color: #173b70;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.boton-principal:hover {
+    background: #dbeafe;
+}
+
+
+/* ================= MENU ================= */
+
+nav {
+    background: #102a4c;
+
+    padding: 12px;
+
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+nav a,
+#modoBtn {
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+    background: transparent;
+
+    padding: 9px 12px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+nav a:hover,
+#modoBtn:hover {
+    background: #2563a8;
+}
+
+
+/* ================= CONTENEDOR ================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* ================= SECCIONES ================= */
+
+.seccion {
+    background: white;
+
+    margin: 25px 0;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.seccion h2 {
+    color: #173b70;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= PROYECTOS ================= */
+
+.proyectos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.tarjeta {
+    background: #f8fafc;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 22px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.icono {
+    font-size: 2.3rem;
+
+    margin-bottom: 8px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 8px;
+
+    color: #173b70;
+}
+
+.etiquetas {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.etiquetas span {
+    background: #dbeafe;
+
+    color: #173b70;
+
+    padding: 4px 8px;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+
+    margin-right: 4px;
+}
+
+.boton {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 9px 13px;
+
+    background: #2563a8;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: #173b70;
+}
+
+
+/* ================= HABILIDADES ================= */
+
+.habilidades {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.habilidades span {
+    background: #dbeafe;
+
+    color: #173b70;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ================= INFORMACION ================= */
+
+.informacion {
+    background: linear-gradient(135deg, #173b70, #2563a8);
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    text-align: center;
+
+    gap: 20px;
+}
+
+.informacion strong {
+    font-size: 1.8rem;
+}
+
+.informacion p {
+    color: #dbeafe;
+}
+
+
+/* ================= FORMULARIO ================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+input,
+textarea {
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    padding: 11px;
+
+    border: none;
+
+    background: #2563a8;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+form button:hover {
+    background: #173b70;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #102a4c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ================= MODO OSCURO ================= */
+
+body.oscuro {
+    background: #0b1120;
+
+    color: #e5e7eb;
+}
+
+body.oscuro .seccion {
+    background: #1e293b;
+
+    border: 1px solid #334155;
+}
+
+body.oscuro .seccion h2 {
+    color: #93c5fd;
+}
+
+body.oscuro .tarjeta {
+    background: #111827;
+
+    border-color: #374151;
+}
+
+body.oscuro .tarjeta h3 {
+    color: #93c5fd;
+}
+
+body.oscuro .habilidades span {
+    background: #1e3a5f;
+
+    color: #bfdbfe;
+}
+
+body.oscuro .etiquetas span {
+    background: #1e3a5f;
+
+    color: #bfdbfe;
+}
+
+body.oscuro input,
+body.oscuro textarea {
+    background: #111827;
+
+    color: white;
+
+    border-color: #4b5563;
+}
+
+body.oscuro .informacion {
+    background: #172554;
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 700px) {
+
+    .presentacion {
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+
+    .presentacion h1 {
+        font-size: 2.5rem;
+    }
+
+    .avatar {
+        width: 130px;
+        height: 130px;
+
+        font-size: 2.5rem;
+    }
+
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .informacion {
+        grid-template-columns: 1fr;
+    }
+
+}
+
