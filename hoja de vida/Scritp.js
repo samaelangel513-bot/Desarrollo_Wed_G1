@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         new Date().getFullYear();
 
 
-    // MODO OSCURO
+    // Modo oscuro
 
     const modoBtn = document.getElementById("modoBtn");
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // FORMULARIO
+    // Formulario
 
     const formulario =
         document.getElementById("contactoForm");
