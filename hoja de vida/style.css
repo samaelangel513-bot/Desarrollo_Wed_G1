@@ -18,7 +18,7 @@ body {
 }
 
 
-/* ================= HEADER ================= */
+/* ================= Header ================= */
 
 header {
     background: linear-gradient(135deg, #173b70, #2563a8);
@@ -93,7 +93,7 @@ header {
 }
 
 
-/* ================= MENU ================= */
+/* ================= Menu ================= */
 
 nav {
     background: #102a4c;
@@ -132,7 +132,7 @@ nav a:hover,
 }
 
 
-/* ================= CONTENEDOR ================= */
+/* ================= Contenedor ================= */
 
 .contenedor {
     width: 90%;
@@ -142,7 +142,7 @@ nav a:hover,
 }
 
 
-/* ================= SECCIONES ================= */
+/* ================= Secciones ================= */
 
 .seccion {
     background: white;
@@ -165,7 +165,7 @@ nav a:hover,
 }
 
 
-/* ================= PROYECTOS ================= */
+/* ================= Proyectos ================= */
 
 .proyectos {
     display: grid;
@@ -245,7 +245,7 @@ nav a:hover,
 }
 
 
-/* ================= HABILIDADES ================= */
+/* ================= Habilidades ================= */
 
 .habilidades {
     display: flex;
@@ -268,7 +268,7 @@ nav a:hover,
 }
 
 
-/* ================= INFORMACION ================= */
+/* ================= Informatica ================= */
 
 .informacion {
     background: linear-gradient(135deg, #173b70, #2563a8);
@@ -293,7 +293,7 @@ nav a:hover,
 }
 
 
-/* ================= FORMULARIO ================= */
+/* ================= Formulario ================= */
 
 form {
     display: flex;
@@ -335,7 +335,7 @@ form button:hover {
 }
 
 
-/* ================= FOOTER ================= */
+/* ================= Footer ================= */
 
 footer {
     background: #102a4c;
@@ -348,7 +348,7 @@ footer {
 }
 
 
-/* ================= MODO OSCURO ================= */
+/* ================= Modo oscuro ================= */
 
 body.oscuro {
     background: #0b1120;
@@ -402,7 +402,7 @@ body.oscuro .informacion {
 }
 
 
-/* ================= CELULAR ================= */
+/* ================= Celular ================= */
 
 @media (max-width: 700px) {
 
