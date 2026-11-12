@@ -1,211 +1,221 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio | Angel Samael</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Encabezado -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio personal de Angel Samael, desarrollador web en formación.">
+    <meta name="theme-color" content="#0b1220">
+    <title>Angel Samael | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js" defer></script>
+</head>
 
-    <header id="inicio">
-      <div class="presentacion">
-        <div>
-          <p>👋 Hola, soy</p>
+<body>
+    <header class="hero" id="inicio">
+        <nav class="nav contenedor" aria-label="Navegación principal">
+            <a class="marca" href="#inicio">AS<span>.</span></a>
 
-          <h1>Angel Samael</h1>
+            <div class="nav-enlaces">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#formacion">Formación</a>
+                <a href="#contacto">Contacto</a>
+            </div>
 
-          <h2>Desarrollador Web en formación</h2>
+            <button class="tema-btn" id="modoBtn" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
+                <span aria-hidden="true">🌙</span>
+                <span class="tema-texto">Modo oscuro</span>
+            </button>
+        </nav>
 
-          <p>
-            Estudiante de informática interesado en crear páginas web modernas y
-            funcionales.
-          </p>
+        <div class="presentacion contenedor">
+            <div class="presentacion-texto">
+                <p class="sobrelinea"><span class="punto"></span> Disponible para aprender y colaborar</p>
+                <p class="saludo">Hola, soy</p>
+                <h1>Angel <span>Samael</span></h1>
+                <h2>Desarrollador web en formación</h2>
+                <p class="intro">
+                    Soy estudiante de informática y actualmente estoy aprendiendo a crear sitios web
+                    claros, accesibles y funcionales. Este portafolio reúne mi progreso.
+                </p>
+                <div class="acciones">
+                    <a class="boton boton-principal" href="#proyectos">Ver proyectos <span
+                            aria-hidden="true">↓</span></a>
+                    <a class="boton boton-secundario" href="#contacto">Contactarme</a>
+                </div>
+            </div>
 
-          <a href="#proyectos" class="boton-principal"> Ver mis proyectos </a>
+            <div class="foto-marco">
+                <img src="foto1.jpeg" alt="Fotografía de Angel Gomez Borja">
+                <span class="foto-etiqueta">Estudiante de informática</span>
+            </div>
         </div>
-
-        <div class="avatar">AS</div>
-      </div>
     </header>
 
-    <!-- Menu -->
-
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contacto">Contacto</a>
-
-      <button id="modoBtn" type="button" onclick="modoOscuro()">
-        🌙 Modo oscuro
-      </button>
-    </nav>
-
     <main class="contenedor">
-      <!-- Sobre mi -->
+        <section class="seccion sobre-mi" id="sobre-mi">
+            <div class="encabezado-seccion">
+                <p class="sobrelinea">Conóceme</p>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="sobre-mi-contenido">
+                <p>
+                    Me interesa el hecho de desarrollar paginas web, el diseño de interfaces y la tecnología.
+                    en mi trasncurso de mi programa academico, he podido aprender creando. Cada proyecto me a ayuda a
+                    practicar y a resolver problemas nuevos.
+                </p>
+                <p>
+                    Actualmente estoy fortaleciendo mis conocimientos en HTML, CSS y
+                    JavaScript. Mi objetivo es seguir creciendo como desarrollador y
+                    participar en proyectos donde pueda aportar y aprender.
+                </p>
+            </div>
+        </section>
 
-      <section id="sobre-mi" class="seccion">
-        <h2>Sobre mí</h2>
-
-        <p>
-          Hola, me llamo Angel y soy estudiante de informática y desarrollador
-          web en formación.
-        </p>
-
-        <p>
-          Me interesa el desarrollo de páginas web, el diseño y la creación de
-          proyectos utilizando diferentes tecnologías.
-        </p>
-      </section>
-
-      <!-- Proyecto -->
-
-      <section id="proyectos" class="seccion">
-        <h2>Mis proyectos</h2>
-
-        <div class="proyectos">
-          <div class="tarjeta">
-            <div class="icono">🌐</div>
-
-            <h3>Página Web</h3>
-
-            <p>Página web desarrollada utilizando HTML5, CSS3 y JavaScript.</p>
-
-            <div class="etiquetas">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+        <section class="seccion" id="proyectos">
+            <div class="encabezado-seccion">
+                <p class="sobrelinea">Mi trabajo</p>
+                <h2>Proyectos destacados</h2>
+                <p class="descripcion-seccion">
+                    Algunos ejercicios y proyectos que he desarrollado mientras aprendo.
+                </p>
             </div>
 
-            <a href="https://app.site123.com/" target="_blank" class="boton">
-              Ver proyecto →
-            </a>
-          </div>
+            <div class="proyectos">
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">🌐</div>
+                    <p class="tipo-proyecto">Desarrollo web</p>
+                    <h3>Mi primera página web</h3>
+                    <p>
+                        Sitio creado para practicar estructura HTML, estilos CSS y
+                        comportamiento con JavaScript.
+                    </p>
+                    <ul class="etiquetas" aria-label="Tecnologías">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
 
-          <div class="tarjeta">
-            <div class="icono">🛒</div>
+                    <a class="enlace-proyecto" href="https://angelgomezborja123-ops.github.io/wed./">Ingresar al
+                        proyecto
+                        <span aria-hidden="true">↗</span></a>
+                </article>
 
-            <h3>Tienda Virtual</h3>
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">🛍️</div>
+                    <p class="tipo-proyecto">Diseño de interfaz</p>
+                    <h3>Tienda virtual</h3>
+                    <p>
+                        Propuesta de tienda con productos organizados en tarjetas y una
+                        navegación sencilla.
+                    </p>
+                    <ul class="etiquetas" aria-label="Tecnologías">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a class="enlace-proyecto" href="https://www.temu.com/co">Ingresar al
+                        proyecto <span aria-hidden="true">↗</span></a>
+                </article>
 
-            <p>Propuesta de una tienda virtual con productos y navegación.</p>
-
-            <div class="etiquetas">
-              <span>HTML</span>
-              <span>CSS</span>
+                <article class="tarjeta">
+                    <div class="tarjeta-icono" aria-hidden="true">⚽</div>
+                    <p class="tipo-proyecto">Proyecto personal</p>
+                    <h3>Estadísticas deportivas</h3>
+                    <p>
+                        Idea de página para presentar información deportiva de forma
+                        ordenada y fácil de consultar.
+                    </p>
+                    <ul class="etiquetas" aria-label="Tecnologías">
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a class="enlace-proyecto" href="https://www.365scores.com/es">Ingresar al
+                        proyecto <span aria-hidden="true">↗</span></a>
+                </article>
             </div>
 
-            <a href="https://www.amazon.com/" target="_blank" class="boton">
-              Ver proyecto →
-            </a>
-          </div>
+        </section>
 
-          <div class="tarjeta">
-            <div class="icono">⚽</div>
-
-            <h3>Proyecto Deportivo</h3>
-
-            <p>Proyecto relacionado con deportes y estadísticas.</p>
-
-            <div class="etiquetas">
-              <span>HTML</span>
-              <span>JS</span>
+        <section class="seccion" id="habilidades">
+            <div class="encabezado-seccion">
+                <p class="sobrelinea">Lo que estoy aprendiendo</p>
+                <h2>Habilidades</h2>
             </div>
 
-            <a
-              href="https://www.overlyzer.com/de"
-              target="_blank"
-              class="boton"
-            >
-              Ver proyecto →
-            </a>
-          </div>
-        </div>
-      </section>
+            <div class="habilidades-grupo">
+                <h3>Tecnologías</h3>
+                <ul class="habilidades">
+                    <li><span>HTML5</span><small>Estructura de páginas</small></li>
+                    <li><span>CSS3</span><small>Estilos y diseño adaptable</small></li>
+                    <li><span>JavaScript</span><small>Interactividad básica</small></li>
+                </ul>
+            </div>
 
-      <!-- Habilidades -->
+            <div class="habilidades-grupo">
+                <h3>Otros conocimientos</h3>
+                <ul class="habilidades habilidades-secundarias">
+                    <li>Ofimática</li>
+                    <li>Mantenimiento básico</li>
+                    <li>Aprendizaje autónomo</li>
+                </ul>
+            </div>
+        </section>
 
-      <section id="habilidades" class="seccion">
-        <h2>Habilidades</h2>
+        <section class="seccion" id="formacion">
+            <div class="encabezado-seccion">
+                <p class="sobrelinea">Mi camino</p>
+                <h2>Formación</h2>
+            </div>
+            <div class="formacion-item">
+                <span class="formacion-icono" aria-hidden="true">📚</span>
+                <div>
+                    <h3>Estudiante de informática</h3>
+                    <p>
+                        En formación. Actualmente aprendiendo desarrollo web, fundamentos
+                        de tecnología, Redes, mantenimiento correctivo y preventivo, en gran parte del sofware.
+                    </p>
+                    <p class="formacion-fecha">UNICARIBE 11/11/2026</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="habilidades">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Ofimática</span>
-          <span>Mantenimiento</span>
-          <span>Diseño Web</span>
-        </div>
-      </section>
+        <section class="seccion contacto" id="contacto">
+            <div class="encabezado-seccion">
+                <p class="sobrelinea">Hablemos</p>
+                <h2>Contacto</h2>
+                <p class="descripcion-seccion">
+                    ¿Tienes una idea o quieres conversar sobre un proyecto? Escríbeme.
+                </p>
+            </div>
 
-      <!-- Informacion -->
+            <p class="contacto-correo">
+                También puedes contactarme en:
+                <a href="mailto:samaelangel513@gmail.com">samaelangel513@gmail.com</a>
+            </p>
 
-      <section class="seccion informacion">
-        <div>
-          <strong>💻 3+</strong>
-          <p>Proyectos</p>
-        </div>
+            <form id="contactoForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
 
-        <div>
-          <strong>🚀 3</strong>
-          <p>Tecnologías</p>
-        </div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" autocomplete="email" required>
 
-        <div>
-          <strong>📚 100%</strong>
-          <p>Aprendizaje</p>
-        </div>
-      </section>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-      <!-- Contacto -->
-
-      <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-
-        <form id="contactoForm">
-          <input type="text" id="nombre" placeholder="Tu nombre" required />
-
-          <input type="email" id="correo" placeholder="Tu correo" required />
-
-          <textarea
-            id="mensaje"
-            rows="5"
-            placeholder="Escribe tu mensaje"
-            required
-          ></textarea>
-
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </section>
+                <button class="boton boton-principal" type="submit">Preparar mensaje</button>
+            </form>
+        </section>
     </main>
 
-    <!-- Footer -->
-
-    <footer>
-      <p>
-        © <span id="anio"></span>
-        Angel Samael | Mi Portafolio
-      </p>
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+            <p>Hecho por Angel Samael · <span id="anio"></span></p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
     </footer>
+</body>
 
-    <script src="Script.js"></script>
-
-   <script>
-function modoOscuro() {
-
-    document.body.classList.toggle("oscuro");
-
-    const boton = document.getElementById("modoBtn");
-
-    if (document.body.classList.contains("oscuro")) {
-        boton.textContent = "☀️ Modo claro";
-    } else {
-        boton.textContent = "🌙 Modo oscuro";
-    }
-}
-</script>
-  </body>
 </html>
